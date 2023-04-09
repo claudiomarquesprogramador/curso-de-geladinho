@@ -51,33 +51,6 @@
         <p>Desenvolvido por Claudio Marques Programador</p>
     </footer>
     <script>
-        //senha para entrar
-        function testarSenha(){
-            if(document.getElementById('valorSenha').value == "223334444"){
-                document.getElementById("main").style.display = "block";
-                document.getElementById('divSenha').style.display = "none";
-            }else{
-                alert('Senha incorreta')
-            }
-        }
-
-        //select1
-        function escolha1(){
-            let valueSelect = document.getElementById('select1').value;
-            document.getElementById('conteudo').innerHTML='';
-            if (valueSelect == 'GourmetProfissional') {
-                document.getElementById('conteudo').innerHTML = gourmetProfissional;
-            }else if (valueSelect == 'GourmetProfissionalBaseAgua') {
-                document.getElementById('conteudo').innerHTML = gourmetProfissionalBaseAgua;
-            }else if (valueSelect == 'gourmetProfissionalPreparacoes') {
-                document.getElementById('conteudo').innerHTML = gourmetProfissionalPreparacoes;
-            }else if (valueSelect == 'GourmetProfissionalPoParaSorvete') {
-                document.getElementById('conteudo').innerHTML = gourmetProfissionalPoParaSorvete;
-            }else if (valueSelect == 'Pudim') {
-                document.getElementById('conteudo').innerHTML = pudim;
-            };
-        };
-
         var gourmetProfissional = [
             [
                 "<hr><span>Geladinho de Abacate</span>",
@@ -2523,6 +2496,31 @@
                 "<br>Bata e está pronto"
             ]
         ];
+
+        function testarSenha(){
+            if(document.getElementById('valorSenha').value == "223334444"){
+                document.getElementById("main").style.display = "block";
+                document.getElementById('divSenha').style.display = "none";
+            }else{
+                alert('Senha incorreta')
+            }
+        }
+
+        function escolha1(){
+            let valueSelect = document.getElementById('select1').value;
+            document.getElementById('conteudo').innerHTML='';
+            if (valueSelect == 'GourmetProfissional') {
+                document.getElementById('conteudo').innerHTML = gourmetProfissional;
+            }else if (valueSelect == 'GourmetProfissionalBaseAgua') {
+                document.getElementById('conteudo').innerHTML = gourmetProfissionalBaseAgua;
+            }else if (valueSelect == 'gourmetProfissionalPreparacoes') {
+                document.getElementById('conteudo').innerHTML = gourmetProfissionalPreparacoes;
+            }else if (valueSelect == 'GourmetProfissionalPoParaSorvete') {
+                document.getElementById('conteudo').innerHTML = gourmetProfissionalPoParaSorvete;
+            }else if (valueSelect == 'Pudim') {
+                document.getElementById('conteudo').innerHTML = pudim;
+            };
+        };
 
         var gourmetProfissionalPoParaSorvete = [
             [
